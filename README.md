@@ -63,6 +63,8 @@ Three builds available in one page:
 
 The Heltec V3 (or any Meshtastic receiver) has to run its Serial Module in TEXTMSG mode so it can relay Remote-ID JSON over LoRa. Both ends must share the same Meshtastic channel and region.
 
+The PCB wires XIAO pad **D4 (GPIO5) TX** to Heltec pin 19 (RX) and XIAO pad **D5 (GPIO6) RX** to Heltec pin 20 (TX). Every Mesh Detect firmware uses those pads.
+
 | Setting | Value |
 |---|---|
 | `serial.enabled` | true |
